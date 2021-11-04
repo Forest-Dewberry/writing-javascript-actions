@@ -34,19 +34,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-      # Forest Runs a single command using the runners shell
-      - name: Run another one-line script
-        run: echo Hello, world!
-      
-      # Forest Runs a single command using the runners shell
-      - name: Install Python
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.7
-          
-      # Forest Runs a single command using the runners shell
-      - name: Install DBT
-        run: |
-          python -m pip install --upgrade pip
-          pip install dbt
